@@ -1,7 +1,7 @@
 # EasyAdapter
 A class that saves time of writing boilerplate code for saving any kind of data in shared preferences
 
-[![](https://jitpack.io/v/islamdidarmd/kprefs.svg)](https://jitpack.io/v/islamdidarmd/kprefs)
+[![](https://jitpack.io/v/islamdidarmd/Kpref.svg)](https://jitpack.io/#islamdidarmd/Kpref)
 
 ## Installation (with Gradle)
 Step 1. Add the JitPack repository to your build file
