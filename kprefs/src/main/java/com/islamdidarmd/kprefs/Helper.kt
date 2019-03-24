@@ -25,21 +25,20 @@ class Kprefs {
         }
 
         fun save(key: String, value: Any) {
-            try {
+            if (prefs == null) {
+                throw NullPointerException("Kprefs not initialized. Data won't save...")
+            } else {
                 prefs!!.edit().putString(key, Gson().toJson(value)).apply()
-            } catch (e: NullPointerException) {
-                Log.d(TAG, "Kprefs not initialized. Data won't save...")
             }
-
         }
 
         fun <T> get(key: String, type: Type): T? {
-            var x: T?
-            try {
+            val x: T?
+
+            if (prefs == null) {
+                throw NullPointerException("Kprefs not initialized. Data won't save...")
+            } else {
                 x = Gson().fromJson(prefs!!.getString(key, ""), type)
-            } catch (e: NullPointerException) {
-                x = null
-                Log.d(TAG, "Kprefs not initialized. Data won't save...")
             }
             return x
         }
