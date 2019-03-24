@@ -1,4 +1,4 @@
-# EasyAdapter
+# Kpref
 A class that saves time of writing boilerplate code for saving any kind of data in shared preferences
 
 [![](https://jitpack.io/v/islamdidarmd/Kpref.svg)](https://jitpack.io/#islamdidarmd/Kpref)
