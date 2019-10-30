@@ -19,28 +19,28 @@ Step 2. Add the dependency
 
 ```groovy
 dependencies {
-		implementation 'com.github.islamdidarmd:Kpref:0.1.0'
+		implementation 'com.github.islamdidarmd:Kpref:0.1.1'
 	}
 ```
 	
 ### How to use
 
 ```kotlin
-        //save values in a default sharedPreference
-        Kprefs.initDefault(this)
+                //save values in a default sharedPreference
+                Kprefs.initDefault(this)
 
-        Kprefs.save("test", 10)
+                Kprefs.save("test", 10)
 
-        val x: Int? = Kprefs.get("test", Int::class.java)
+                val x: Int? = Kprefs.get("")
 
 
-        //save values in your preference
-        val pref = getSharedPreferences("my_preference", Context.MODE_PRIVATE)
-        Kprefs.init(pref)
+                //save values in your preference
+                val pref = getSharedPreferences("my_preference", Context.MODE_PRIVATE)
+                Kprefs.init(pref)
 
-        Kprefs.save("testMyPref", "Saved")
+                Kprefs.save("testMyPref", "Saved")
 
-        val value: String? = Kprefs.get("testMyPref", String::class.java)
+                val value: String? = Kprefs.get("")
 ```
 
 

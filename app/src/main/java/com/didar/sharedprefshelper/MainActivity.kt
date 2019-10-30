@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         Kprefs.save("test", 10)
 
-        val x: Int? = Kprefs.get("", Int::class.java)
+        val x: Int? = Kprefs.get("")
 
 
         //save values in your preference
@@ -25,6 +25,6 @@ class MainActivity : AppCompatActivity() {
 
         Kprefs.save("testMyPref", "Saved")
 
-        val value: String? = Kprefs.get("", String::class.java)
+        val value: String? = Kprefs.get("")
     }
 }
